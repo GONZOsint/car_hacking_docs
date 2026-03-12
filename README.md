@@ -15,7 +15,8 @@ Curated list of academic and industry papers, **technical blog posts**, and **Gi
 ```
 car_hacking_docs/
 ├── README.md           # This file: intro, table, usage
-├── papers.csv          # Index: year, title, authors, topics, url, local_path (source of truth)
+├── papers.csv          # Index: year, title, authors, url, local_path (source of truth)
+├── papers.tsv          # Same index in tab-separated form (for GitHub table view)
 └── papers/             # Downloaded PDFs (and some .md for web articles) by year
     ├── 2005/
     ├── 2007/
@@ -23,6 +24,7 @@ car_hacking_docs/
 ```
 
 - **papers.csv**: Single source of truth. Open in Excel or a text editor to filter by topic or year. The `local_path` column is filled when a PDF (or Markdown) is successfully downloaded or generated.
+- **papers.tsv**: Same data as CSV in tab-separated form. On GitHub, both [papers.csv](papers.csv) and [papers.tsv](papers.tsv) are rendered as **interactive tables** (search, sort, link to rows). Tables work for files under 512 KB; the first row is used as the header.
 - **papers/YYYY/**: One folder per year. Files are typically `YYYY_Short_Title.pdf`; some entries (e.g. blogs, articles) may be stored as `.md` in this same folder when the source is HTML. The full index is in **papers.csv**.
 
 
